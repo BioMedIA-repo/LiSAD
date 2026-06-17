@@ -330,7 +330,7 @@ def main():
     ari_refined = adjusted_rand_score(adata.obs["ground_truth"], preds_refined)
     nmi_refined = normalized_mutual_info_score(adata.obs["ground_truth"], preds_refined)
 
-    print("\n[Best Result Analysis]")
+    print("\n[Final Result Analysis]")
     print(f"Raw ARI     : {ari_raw:.4f}")
     print(f"Refined ARI : {ari_refined:.4f} ({ari_refined - ari_raw:+.4f})")
     print(f"Raw NMI     : {nmi_raw:.4f}")
